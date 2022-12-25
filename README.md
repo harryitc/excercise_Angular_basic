@@ -1,6 +1,13 @@
 # Learn Angular
 - Đây là bài tập về Angular - hướng dẫn những kiến thức cơ bản qua việc xây dụng 1 trang web Thương Mại Điện Tử ĐƠN GIẢN. 
 
+# Cách dùng
+- create dev container
+- clone về
+- npm install
+- ng build
+- ng serve
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
