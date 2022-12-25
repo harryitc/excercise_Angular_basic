@@ -1,0 +1,20 @@
+<h2>Products</h2>
+
+
+
+<!-- ngFor: vòng lặp for
+    đặt tên product thay cho products -->
+
+
+<!-- Cú pháp 1:     <ng-template ngFor let-product [ngForOf]="products">       -->
+<div *ngFor="let product of products">
+    <h3>
+    <!--title ở đây là khi hover vào sẽ hiển thị tên sản phẩm-->
+        <a [title]="product.name + ' details'">{{product.name}}</a>
+    </h3>
+
+    <p *ngIf="product.description">
+        Description: {{product.description}}
+    </p>
+    <button type="button" (click)="share()">Share</button>
+</div>
