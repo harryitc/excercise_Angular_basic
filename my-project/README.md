@@ -2,12 +2,34 @@
 - Đây là bài tập về Angular - hướng dẫn những kiến thức cơ bản qua việc xây dụng 1 trang web Thương Mại Điện Tử ĐƠN GIẢN. 
 
 # Cách dùng
-- create dev container
 - clone về
-- npm install
+- git checkout dev (sang nhánh dev)
+- create dev container
+- cd vào file hoặc folder cùng cấp với folder .vscode
+- npm install (tạo ra node_modules cùng cấp với folder .vscode)
 - ng build
 - ng serve
 
+# extension nhanh
+"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"EditorConfig.EditorConfig",
+				"ms-vscode.vscode-typescript-tslint-plugin",
+				"eg2.vscode-npm-script",
+				"christian-kohler.path-intellisense",
+				"angular.ng-template",
+				"johnpapa.angular2",
+				"sibiraj-s.vscode-scss-formatter",
+				"gruntfuggly.todo-tree",
+				"nrwl.angular-console",
+				"meganrogge.template-string-converter",
+				"esbenp.prettier-vscode",
+				"github.vscode-pull-request-github",
+				"eamodio.gitlens"
+			]
+		}
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
