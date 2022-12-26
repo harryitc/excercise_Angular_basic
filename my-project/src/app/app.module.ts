@@ -10,6 +10,8 @@ import { TopBarComponent } from "./top-bar/top-bar.component"
 // component danh sách sản phẩm
 import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { products } from "./products";
 
 
 @NgModule({
@@ -17,14 +19,16 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent }
+      { path: '', component: ProductListComponent },
+      { path: 'products/:productID',component:ProductDetailsComponent},
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    ProductDetailsComponent
   ],
   bootstrap: [
     AppComponent
