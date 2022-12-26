@@ -9,6 +9,7 @@ import { TopBarComponent } from "./top-bar/top-bar.component"
 
 // component danh sách sản phẩm
 import { ProductListComponent } from "./product-list/product-list.component";
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ProductListComponent } from "./product-list/product-list.component";
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductAlertsComponent
   ],
   bootstrap: [
     AppComponent
