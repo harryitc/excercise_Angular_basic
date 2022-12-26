@@ -22,7 +22,13 @@ export const products = [
         id: 3,
         name: 'Phone Standard',
         price: 299,
-        description: ''
+        description: 'Điện thoại chuẩn píc xồ'
+    },
+    {
+        id: 4,
+        name: 'Iphone Đập đá',
+        price: 1000,
+        description: 'Rớt không vỡ màn hình, đập không hư, ...'
     }
 ];
 

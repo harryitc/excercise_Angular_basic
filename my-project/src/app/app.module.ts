@@ -1,18 +1,17 @@
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { RouterModule } from "@angular/router";
-import { ReactiveFormsModule } from "@angular/forms";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // component
-import { AppComponent } from "./app.component";
-import { TopBarComponent } from "./top-bar/top-bar.component"
+import { AppComponent } from './app.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 // component danh sách sản phẩm
-import { ProductListComponent } from "./product-list/product-list.component";
+import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
-
 
 @NgModule({
   imports: [
@@ -20,9 +19,9 @@ import { CartComponent } from './cart/cart.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productID', component:ProductDetailsComponent},
-      { path: 'cart', component: CartComponent},
-    ])
+      { path: 'products/:productID', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
@@ -30,15 +29,8 @@ import { CartComponent } from './cart/cart.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-
-
-
-
+export class AppModule {}
