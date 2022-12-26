@@ -3,6 +3,7 @@
 
 # Cách dùng
 - clone về
+- cd vào folder đã clone
 - git checkout dev (sang nhánh dev)
  + .devcontainer
  + my-project
