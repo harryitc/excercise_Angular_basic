@@ -7,6 +7,20 @@
 <div *ngFor="let product of products">
   <h3>
     <!--title ở đây là khi hover vào sẽ hiển thị tên sản phẩm-->
+
+    <!-- ['/products', product.id]
+    ở đây được hiểu là sex vào route: /products/:produc.id
+    Gỉa sử như không truyền vào product.id mà truyền vào
+    số 1, 2, 3, ... thì nó sẽ ra các route khác -->
+
+    <!-- Nếu như giữ chuột cái thẻ a này
+         và đưa vào đường link thì sẽ hiểu nhé
+         Và thử thêm 1 thứ gì đó vào [routerLink]
+         sẽ hiểu nốt
+    VÍ DỤ: ['/products', product.id, 'hello']
+  - Khi mà giữ chuột và đưa vào Thanh URl, ta sẽ được:
+  http://localhost:4200/products/1/hello
+  -->
     <a
       [title]="product.name + ' details'"
       [routerLink]="['/products', product.id]"
