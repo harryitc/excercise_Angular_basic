@@ -13,5 +13,11 @@
   <p *ngIf="product.description">Description: {{ product.description }}</p>
   <button type="button" (click)="share()">Share</button>
 
-  <app-product-alerts [product]="product"></app-product-alerts>
+  <!-- Pass data to a child component by use []-->
+  <!-- Pass data to a parent component by use ()-->
+  <app-product-alerts
+    [product]="product"
+    (notify)="onNotify()"
+  ></app-product-alerts>
+  <!--Dùng (click) thay cho (notify) cũng được-->
 </div>
