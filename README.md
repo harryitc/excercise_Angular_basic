@@ -4,8 +4,10 @@
 # Cách dùng
 - clone về
 - git checkout dev (sang nhánh dev)
-- create dev container
+ + .devcontainer
+ + my-project
 - cd vào file hoặc folder cùng cấp với folder .vscode
+ + cụ thể là cd vào my-project
 - npm install (tạo ra node_modules cùng cấp với folder .vscode)
 - ng build
 - ng serve
