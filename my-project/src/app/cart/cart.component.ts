@@ -8,8 +8,6 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.scss'],
 })
 export class CartComponent {
-  constructor (
-    private cartService: CartService
-  ) { }
-  items = this.cartService.getItems()
+  constructor(private cartService: CartService) {}
+  items = this.cartService.getItems();
 }
